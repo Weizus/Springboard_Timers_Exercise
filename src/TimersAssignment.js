@@ -27,7 +27,7 @@ let timeIntervalID = setInterval(function randomGame() {
     tries++;
     //conditional for printing and ending the loop
     if (rand > 0.75) {
-        console.log(`Random number: ${rand}. Took ${tries} tries.`)
+        console.log(`Random number: ${rand}. Took ${tries} tries.`);
         clearInterval(timeIntervalID);
     }
 }, 1000);
