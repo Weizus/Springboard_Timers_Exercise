@@ -12,3 +12,13 @@ function countDown(num) {
     }
 }
 
+let timeIntervalID = setInterval(function randomGame() {
+    //pick a number between 0 and 1
+    let rand = Math.random() * 1;
+    rand *= 100;
+    rand = Math.round(rand) / 100;
+    if (rand > 0.75) {
+        console.log(rand)
+        clearInterval(timeIntervalID);
+    }
+}, 1000)
