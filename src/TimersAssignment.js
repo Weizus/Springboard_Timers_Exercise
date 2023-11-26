@@ -14,6 +14,8 @@ function countDown(num) {
     }
 }
 
+countDown(5);
+
 /**
  * Timer with a randomGame function, Function prints a number
  * @param none
