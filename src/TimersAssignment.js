@@ -17,12 +17,13 @@ function countDown(num) {
 countDown(5);
 
 /**
- * Timer with a randomGame function, Function prints a number
+ * generates a random number and increments the # of tries before a desirable
+ * number is made
  * @param none
  * @returns none
  */
 let tries = 0;
-let timeIntervalID = setInterval(function randomGame() {
+function randomGame() {
     //pick a number between 0 and 1
     let rand = Math.random() * 1;
     rand *= 100;
@@ -34,4 +35,5 @@ let timeIntervalID = setInterval(function randomGame() {
         console.log(`Random number: ${rand}. Took ${tries} tries.`);
         clearInterval(timeIntervalID);
     }
-}, 1000);
+}
+let timeIntervalID = setInterval(randomGame, 1000);
