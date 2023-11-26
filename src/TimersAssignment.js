@@ -30,4 +30,4 @@ let timeIntervalID = setInterval(function randomGame() {
         console.log(`Random number: ${rand}. Took ${tries} tries.`)
         clearInterval(timeIntervalID);
     }
-}, 1000)
+}, 1000);
