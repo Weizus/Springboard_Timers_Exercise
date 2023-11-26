@@ -6,7 +6,9 @@
 function countDown(num) {
     if (num > 0) {
         console.log(num);
-        setTimeout(countDown(num-1), 1000);
+        setTimeout(function() {
+            countDown(num-1)
+        }, 1000);
     } else {
         console.log("DONE!");
     }
